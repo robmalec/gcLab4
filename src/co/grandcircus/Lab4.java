@@ -52,9 +52,10 @@ public class Lab4 {
 			catch (Exception e){
 				seanCounter++;
 				yellAtSean(seanCounter);
-				scn.nextLine();
 			}
-			int z = 0;
+			finally {
+				int z = 0;
+			}
 		} while (done == false);
 		System.out.println("Goodbye.");
 		scn.close();
@@ -73,7 +74,7 @@ public class Lab4 {
 			whining = "Seriously?  You think this is funny or something?";
 			break;
 		default:
-			whining = genRandChars((int)Math.pow(2.0, (double) seanCounter));
+			whining = "UGH!!  " + genRandChars((int)Math.pow(2.0, (double) seanCounter));
 			for (int i = 0; i < seanCounter; i++) {
 				whining += "!";
 			}
