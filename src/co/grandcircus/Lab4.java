@@ -57,6 +57,7 @@ public class Lab4 {
 			int z = 0;
 		} while (done == false);
 		System.out.println("Goodbye.");
+		scn.close();
 	}
 	
 	public static void yellAtSean(int seanCounter) {
